@@ -14,4 +14,4 @@ Author [New]:      Xinjue Li
 
 Submitted:         Tue, February 2 2016 by Xinjue Li
 
-Example:           There are two examples,one is about coefficients varying,the other is forecasting 
+Example:           There are two examples, one is about coefficients varying, the other is forecasting 
