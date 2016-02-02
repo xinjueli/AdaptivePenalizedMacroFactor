@@ -34,8 +34,8 @@ Example :
 ```
 
 
-![Picture1](prediction.png)
-![Picture2](varing.png)
+![Picture1](prediction.PNG)
+![Picture2](varing.PNG)
 
 
 ```R
