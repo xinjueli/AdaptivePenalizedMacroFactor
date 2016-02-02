@@ -4,12 +4,10 @@
 ## ![qlogo](http://quantnet.wiwi.hu-berlin.de/graphics/quantlogo.png) **Coefficient**
 
 ```yaml
-Name of QuantLet : Decision Tree and Random Forest
+Name of QuantLet : Adaptive Penalized MacroFactor
 
 Published in : 'Unpublished; Theoretical description 
-of tree and random forest model in: Daniel Jacob - 
-Fruehsignale fuer Aenderungen von Konjunkturindikatoren 
-durch Analysen von Big Data'
+of why we are going to use the adaptive methods'
 
 Description : 'Builds a classification tree to predict, 
 wheather the customer choose the Citrus Hill (CH) or the
@@ -63,21 +61,21 @@ s=120;
 for j=s:2*s;
     X=[c(j-k_0:j)',y_1(j-k_0:j),f_t_2(j-k_0:j),f_t_3(j-k_0:j),f_t_4(j-k_0:j),f_t_5(j-k_0:j)];
     Y_1=rX_2(j-k_0:j);
-    belta(:,j)=inv(X'*X)*(X'*Y_1);%%%%estimation for the 2-years excess return
+    belta(:,j)=inv(X'*X)*(X'*Y_1);
     rX_2_hat(j)=belta(:,j)'*[1,y_1(j-1),f_t_2(j-1),f_t_3(j-1),f_t_4(j-1),f_t_5(j-1)]';
 end
 
 for j=2*s+1:3.3*s;
     X=[c(j-k_1:j)',y_1(j-k_1:j),f_t_2(j-k_1:j),f_t_3(j-k_1:j),f_t_4(j-k_1:j),f_t_5(j-k_1:j)];
     Y_1=rX_2(j-k_1:j);
-    belta(:,j)=inv(X'*X)*(X'*Y_1);%%%%estimation for the 2-years excess return
+    belta(:,j)=inv(X'*X)*(X'*Y_1);
     rX_2_hat(j)=belta(:,j)'*[1,y_1(j-1),f_t_2(j-1),f_t_3(j-1),f_t_4(j-1),f_t_5(j-1)]';
 end
 
 for j=3.3*s+1:4.5*s;
     X=[c(j-k_2:j)',y_1(j-k_2:j),f_t_2(j-k_2:j),f_t_3(j-k_2:j),f_t_4(j-k_2:j),f_t_5(j-k_2:j)];
     Y_1=rX_2(j-k_2:j);
-    belta(:,j)=inv(X'*X)*(X'*Y_1);%%%%estimation for the 2-years excess return
+    belta(:,j)=inv(X'*X)*(X'*Y_1);
     rX_2_hat(j)=belta(:,j)'*[1,y_1(j-1),f_t_2(j-1),f_t_3(j-1),f_t_4(j-1),f_t_5(j-1)]';
 end
 
