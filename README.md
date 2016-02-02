@@ -9,26 +9,24 @@ Name of QuantLet : Adaptive Penalized MacroFactor
 Published in : 'Unpublished; Theoretical description 
 of why we are going to use the adaptive methods'
 
-Description : 'Builds a classification tree to predict, 
-wheather the customer choose the Citrus Hill (CH) or the
-Minute Maid (MM) Orange Juice. A number of characteristics 
-is used in order to grow a tree. The second part builds 
-a random forest with the same dataset. A visualization 
-of the error terms are shown.'
+Description : 'Builds a classification model to predict
+by combining the shrinking methods with the adaptive methods.
+The model can automatically detect the homogenous interval 
+and the active macro-factor set'
 
-Keywords : 'tree, decision-tree, regression, classification,
+Keywords : 'Penalized, regression, classification,
 simulation, random-forest, plot, graphical representation,
 visualization'
 
-See also : 
+See also : 'Time varing LASSO'
 
 Author : Xinjue Li
 
 Submitted : 
 
 Example :
-- Tree Model
-- Error of the random forests regression
+- prediction
+- Coefficient varying
 ```
 
 
