@@ -8,8 +8,7 @@ Description:      'Builds a classification model to predict
                    model can automatically detect the homogenous interval 
                    and the active macro-factor set'
 
-Keywords:         'regression, penalization,classification,
-                   simulation, random-forest, plot, graphical representation'
+Keywords:          regression,forcast,simulation,financial,price,likelihood
 
 Author [New]:      Xinjue Li
 
